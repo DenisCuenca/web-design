@@ -1,0 +1,234 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+body{
+    overflow-x: hidden;
+    
+}
+div{
+    width:100vmax;
+    height: 100vh; 
+}
+
+.sec_1 .cajas{
+    position: relative;
+}
+
+.caja1, .caja2, .caja3,.caja4,.caja5{
+    position: absolute;
+    
+}
+
+.caja1{
+    
+    width: 100px;
+    height: 1600px;
+    background: linear-gradient(to top, rgb(12, 91, 181) 0%, rgb(2, 15, 70) 100%);
+    transform: rotate(80deg);
+    left: 40%;
+    top: -46%;
+    position: fixed;
+
+    
+}
+
+
+.caja2{
+    
+    width: 100px;
+    height: 150px;
+    background: linear-gradient(to top, rgb(247, 138, 21) 0%, rgb(63, 255, 191) 100%);
+    transform: rotate(80deg);
+    left: 20%;
+    border-radius: 10%;
+    position: fixed;
+}
+.caja3{
+    
+    width: 100px;
+    height: 150px;
+    background: linear-gradient(to top, rgb(49, 160, 131) 0%, #2f4ca7 30%, rgb(63, 76, 255) 100%);
+    transform: rotate(40deg);
+    left: 43%;
+    top: 10%;
+    position: fixed;
+    border-radius: 10%;
+}
+
+
+.caja4{
+    
+    width: 100px;
+    height: 250px;
+    background: linear-gradient(to top, rgb(160, 49, 73) 0%, #2f4ca7 30%, rgb(63, 162, 255) 100%);
+    transform: rotate(300deg);
+    left: 30%;
+    top: 20%;
+    
+    border-radius: 10%;
+}
+
+.caja5{
+    
+    width: 600px;
+    height: 450px;
+    background: linear-gradient(to top, rgb(216, 159, 14) 0%, #c5c028 30%, rgb(255, 76, 63) 100%);
+    transform: rotate(10deg);
+    left: -20%;
+    top: 20%;
+    
+    border-radius: 10%;
+}
+
+
+
+
+.sec_1{
+    background: linear-gradient(to right,rgb(247, 48, 58) 0%, rgb(183, 32, 100) 100%);
+    z-index: 50;
+    
+}
+
+.sec_1 h1, p{
+    color: #fff;
+    position: fixed;
+    z-index: 70;
+    
+}
+
+
+.sec_1  h1{
+    
+    font-size: 55px;
+    width: 440px;
+    display: inline-block;    
+    bottom: 40%;
+    right: 10%;
+    text-shadow: 0px 3px 10px  #000;    
+
+}
+
+.sec_1 p{
+
+    font-size: 21px;
+    width: 470px;
+    right: 6%;
+    bottom: 25%;   
+    
+    
+}
+
+.sec_2{
+    background: linear-gradient(to left, rgb(0, 114, 48) 0%, rgb(36, 143, 57) 30%, rgb(60, 182, 20) 100%);
+    color: #fff;
+    z-index: 20;
+    position: relative;
+}
+
+.sec_2 h2, #mapa{
+    position: absolute;
+}
+
+.sec_2 h2{
+    left: 17%;
+    top: 13%;
+    font-size: 37px;
+    text-shadow: 0px 2px 3px #000;
+
+}
+
+#mapa{
+    top: 25%;
+    left: 5%;
+    width: 640px;
+    border-radius: 4%;
+}
+
+.sec_3{
+    height: 44vh;
+    background: #2f4ca7;
+    position: relative;
+    z-index: 10;
+}
+.sec_3-li-container{
+    position: relative;
+    height: 14vh;
+    top: 20%;
+    left: 12%;
+    
+    
+}
+
+
+.sec_3 li{
+    padding: 10px;
+    font-size: 22px;
+    font-weight: 1000;
+    
+
+}
+
+@media screen and (max-width:350px){
+    body{
+        overflow: hidden;
+    }
+    .caja5{
+        width: 200px;
+        height: 249px;
+        left: -5%;
+        top: 50%;
+    }
+    
+    .caja3{
+        width: 170px;
+        height: 209px;
+        left: -5%;
+        top: 50%;
+    }
+
+    .caja1{
+        width: 100px;
+        height: 1009px;
+        left: -5%;
+        top: 5%;
+    }
+
+    .sec_1 h1{
+        top: 20%;
+        font-size: 30px;
+        left: 2%;
+        width: 300px;
+        text-align: center;
+    }
+
+    .sec_1 p{
+        top: 27%;
+        font-size: 20px;
+        left: 2%;
+        width: 300px;
+        text-align: center;
+    }
+
+    .sec_2 h2{
+        left: 4%;
+    }
+
+    #mapa{
+        width: 310px;
+        left: 1.5%;
+    }
+
+    .sec_3{
+        height: 400px;
+        
+    }
+
+    .sec_3-li-container{
+        height: 400px;
+    }
+    
+
+}
